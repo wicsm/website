@@ -12,10 +12,12 @@
   justify-content: center;
   color: $white;
   z-index: 10;
+
   li {
     display: inline-block;
     list-style: none;
     flex: 0 0 auto;
+
     a {
       display: block;
       padding: 0 10px 0 10px;
@@ -24,12 +26,14 @@
       font-weight: 400;
       text-transform: uppercase;
       color: inherit;
+
       &:hover {
         color: $primary;
         text-decoration: none;
       }
     }
   }
+
   li.active {
     > a {
       font-weight: $font-weight-thin;

@@ -26,7 +26,7 @@ class Hamburger extends React.Component {
         onClick={this.handleToggle}
       >
         <span className="hamburger-box">
-          <span className="hamburger-inner" />
+          <span className="hamburger-inner"/>
         </span>
       </button>
     );

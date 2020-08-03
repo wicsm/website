@@ -30,6 +30,6 @@ export default props => (
         }
       }
     `}
-    render={data => <Menu data={data} />}
+    render={data => <Menu data={data}/>}
   />
 );

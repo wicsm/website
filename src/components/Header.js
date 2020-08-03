@@ -26,17 +26,17 @@ class Header extends React.Component {
         <div className="container">
           <div className="logo">
             <Link to="/">
-              <img alt="Figurit Homepage" src={logo} />
+              <img alt="Figurit Homepage" src={logo}/>
             </Link>
           </div>
           <div className="logo-mobile">
             <Link to="/">
-              <img alt="Figurit Homepage" src={logoMobile} />
+              <img alt="Figurit Homepage" src={logoMobile}/>
             </Link>
           </div>
-          <MenuMobile active={this.state.menuActive} />
-          <Menu />
-          <Hamburger toggleMenu={this.toggleMenu} />
+          <MenuMobile active={this.state.menuActive}/>
+          <Menu/>
+          <Hamburger toggleMenu={this.toggleMenu}/>
         </div>
       </div>
     );

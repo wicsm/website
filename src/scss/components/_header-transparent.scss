@@ -3,11 +3,13 @@
     background-color: transparent;
     color: #ffffff;
   }
+
   .logo {
     @include media-breakpoint-up(lg) {
       opacity: 0;
     }
   }
+
   .main-menu {
     ul {
       li {
@@ -20,6 +22,7 @@
       }
     }
   }
+
   .hamburger {
     .hamburger-inner,
     .hamburger-inner::before,
@@ -29,19 +32,23 @@
       }
     }
   }
+
   .social {
     .social-instagram {
       background-image: url('/images/social/logo-instagram-white.svg');
       background-size: 16px 16px;
     }
+
     .social-linkedin {
       background-image: url('/images/social/logo-linkedin-white.svg');
       background-size: 16px 16px;
     }
+
     .social-twitter {
       background-image: url('/images/social/logo-twitter-white.svg');
       background-size: 16px 16px;
     }
+
     .social-vimeo {
       background-image: url('/images/social/logo-vimeo-white.svg');
       background-size: 16px 16px;

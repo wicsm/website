@@ -7,8 +7,8 @@
       &::before,
       &::after {
         transition: bottom 0.08s 0s ease-out,
-                    top 0.08s 0s ease-out,
-                    opacity 0s linear;
+        top 0.08s 0s ease-out,
+        opacity 0s linear;
       }
     }
 
@@ -18,9 +18,10 @@
         &::after {
           opacity: 0;
           transition: bottom 0.08s ease-out,
-                      top 0.08s ease-out,
-                      opacity 0s 0.08s linear;
+          top 0.08s ease-out,
+          opacity 0s 0.08s linear;
         }
+
         &::before {
           top: 0;
         }

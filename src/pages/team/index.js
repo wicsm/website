@@ -7,7 +7,7 @@ const Team = (props) => {
   const teams = props.data.allMarkdownRemark.edges;
   return (
     <Layout bodyClass="page-teams">
-      <SEO title="Team" />
+      <SEO title="Team"/>
       <div className="intro">
         <div className="container">
           <div className="row">

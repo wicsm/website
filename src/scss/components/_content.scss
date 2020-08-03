@@ -4,18 +4,22 @@
   ol {
     margin-top: 10px;
     margin-bottom: 20px;
+
     li {
       margin-bottom: 5px;
       margin-left: 20px;
     }
   }
+
   a {
     text-decoration: underline;
   }
+
   p {
     color: rgb(78, 78, 78);
     font-family: $font-family-base;
   }
+
   h1 {
     font-family: $font-family-heading;
     line-height: 1.2;
@@ -26,6 +30,7 @@
       font-weight: $font-weight-light;
     }
   }
+
   h2 {
     font-family: $font-family-heading;
     line-height: 1.4;
@@ -35,6 +40,7 @@
       line-height: 1.4;
     }
   }
+
   // Subheading
   h3 {
     color: $primary;

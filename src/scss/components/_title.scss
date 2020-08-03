@@ -6,10 +6,12 @@
   @include media-breakpoint-up(md) {
     font-size: 3rem;
   }
+
   &.black {
     color: #222222;
   }
 }
+
 .title-2 {
   font-family: $font-family-base;
   font-weight: light;
@@ -18,10 +20,12 @@
   @include media-breakpoint-up(md) {
     font-size: 4rem;
   }
+
   a {
     display: block;
   }
 }
+
 .title-3 {
   font-family: $font-family-base;
   font-weight: light;
@@ -33,6 +37,7 @@
   @include media-breakpoint-up(md) {
     font-size: 2.4rem;
   }
+
   a {
     display: block;
   }

@@ -24,6 +24,7 @@ $button-width: 35px;
       transform: translateY(11px) translateX(0) rotate(45deg);
       background: $color-active;
     }
+
     .middle {
       opacity: 0;
       background: $color-active;
@@ -71,31 +72,39 @@ $button-width: 35px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
   &.open {
     opacity: 0.9;
     visibility: visible;
     height: 100%;
     z-index: 10;
+
     li {
       animation: fadeInRight 0.5s ease forwards;
       animation-delay: 0.35s;
+
       &:nth-of-type(2) {
         animation-delay: 0.4s;
       }
+
       &:nth-of-type(3) {
         animation-delay: 0.45s;
       }
+
       &:nth-of-type(4) {
         animation-delay: 0.5s;
       }
+
       &:nth-of-type(5) {
         animation-delay: 0.55s;
       }
+
       &:nth-of-type(6) {
         animation-delay: 0.6s;
       }
     }
   }
+
   ul {
     font-size: 2rem;
     font-family: $font-family-heading;
@@ -104,16 +113,19 @@ $button-width: 35px;
     padding: 0;
     margin: 0;
     flex: 0;
+
     li {
       display: block;
       position: relative;
       opacity: 0;
+
       a {
         display: block;
         position: relative;
         color: $color-link;
         text-decoration: none;
         overflow: hidden;
+
         &:hover:after,
         &:focus:after,
         &:active:after {

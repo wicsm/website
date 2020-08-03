@@ -10,7 +10,7 @@ const Home = (props) => {
   const json = props.data.allFeaturesJson.edges;
   return (
     <Layout bodyClass="page-home">
-      <SEO title="Home" />
+      <SEO title="Home"/>
       <Helmet>
         <meta
           name="description"
@@ -28,7 +28,7 @@ const Home = (props) => {
       </div>
 
       <div className="container pt-2">
-        <Call button />
+        <Call button/>
       </div>
 
       <div className="container pt-8 pt-md-10">
@@ -66,7 +66,7 @@ const Home = (props) => {
               <div className="feature">
                 {edge.node.image && (
                   <div className="feature-image">
-                    <img src={withPrefix(edge.node.image)} />
+                    <img src={withPrefix(edge.node.image)}/>
                   </div>
                 )}
                 <h2 className="feature-title">{edge.node.title}</h2>

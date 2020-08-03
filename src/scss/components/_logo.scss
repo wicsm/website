@@ -4,10 +4,12 @@
     display: block;
     width: 120px;
   }
+
   img {
     width: 100%;
     height: auto;
   }
+
   a {
     display: block;
     width: 100%;
@@ -21,10 +23,12 @@
   @include media-breakpoint-up(sm) {
     display: none;
   }
+
   img {
     width: 100%;
     height: auto;
   }
+
   a {
     display: block;
     width: 100%;

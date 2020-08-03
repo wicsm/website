@@ -6,25 +6,30 @@ ul.social {
   padding: 0;
   align-items: center;
   justify-content: flex-start;
+
   svg {
     fill: currentColor;
     height: 16px;
     width: 16px;
   }
+
   li {
     margin: 0;
     padding: 0;
     list-style: none;
     margin-right: 30px;
+
     &:last-of-type {
       margin: 0;
     }
+
     a {
       background-repeat: no-repeat;
       background-position: center center;
       background-size: auto;
       padding: 8px;
       display: block;
+
       span {
         font-size: 24px;
       }

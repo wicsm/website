@@ -33,6 +33,6 @@ export default props => (
         }
       }
     `}
-    render={data => <MenuMobile active={props.active} data={data} />}
+    render={data => <MenuMobile active={props.active} data={data}/>}
   />
 );

@@ -14,7 +14,7 @@ const Testimonial = ({ data }) => {
             <div className="col-12 col-md-8">
               <div className="testimonial testimonial-single">
                 <h1 className="title">{title}</h1>
-                <div className="content" dangerouslySetInnerHTML={{ __html: html }} />
+                <div className="content" dangerouslySetInnerHTML={{ __html: html }}/>
               </div>
             </div>
           </div>

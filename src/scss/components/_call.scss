@@ -20,6 +20,7 @@
   @include media-breakpoint-up(lg) {
     width: 50%;
   }
+
   .call-box-top {
     flex: 1 0 auto;
     padding: 20px;
@@ -27,6 +28,7 @@
       padding: 20px;
     }
   }
+
   .call-box-bottom {
     flex: 0 0 auto;
     padding: 0 20px 20px 20px;
@@ -34,10 +36,12 @@
       padding: 20px;
     }
   }
+
   .call-name {
     font-size: 1.1rem;
     font-weight: bold;
   }
+
   svg {
     //       fill: lighten($primary, 30%);
     fill: lighten($secondary, 40%);
@@ -50,7 +54,9 @@
       width: 120px;
       height: 120px;
     }
-  } // .call-box-bottom {
+  }
+
+  // .call-box-bottom {
   //   padding: 10px 20px;
   //   border-bottom: 1px solid #CCC;
   // }

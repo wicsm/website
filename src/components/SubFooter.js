@@ -14,7 +14,7 @@ const SubFooter = props => (
               </li>
               <li>
                 <strong>Email: </strong>
-{' '}
+                {' '}
                 <a href={`mailto:${props.data.site.siteMetadata.contact.email}`}>
                   {props.data.site.siteMetadata.contact.email}
                 </a>
@@ -46,6 +46,6 @@ export default props => (
         }
       }
     `}
-    render={data => <SubFooter data={data} />}
+    render={data => <SubFooter data={data}/>}
   />
 );

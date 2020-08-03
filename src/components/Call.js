@@ -7,7 +7,7 @@ const Call = props => (
       <div className="call-phone">
         <strong>Phone: </strong>
         <a href={`tel:${props.data.site.siteMetadata.contact.phone}`}>
-        {props.data.site.siteMetadata.contact.phone}
+          {props.data.site.siteMetadata.contact.phone}
         </a>
       </div>
       <div className="call-email">
@@ -43,6 +43,6 @@ export default props => (
         }
       }
     `}
-    render={data => <Call button={props.button} data={data} />}
+    render={data => <Call button={props.button} data={data}/>}
   />
 );

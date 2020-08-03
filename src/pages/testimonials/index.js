@@ -7,7 +7,7 @@ const Testimonials = (props) => {
   const testimonials = props.data.allMarkdownRemark.edges;
   return (
     <Layout bodyClass="page-testimonials">
-      <SEO title="Testimonials" />
+      <SEO title="Testimonials"/>
       <div className="intro">
         <div className="container">
           <div className="row">
