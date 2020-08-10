@@ -17,9 +17,9 @@ const Home = (props) => {
           content="Women in Computer Science, Statistics & Mathematics, welcomes and uplifts young women in the realm of CSM."
         />
       </Helmet>
-      <div className="intro pb-4">
+      <div className="intro pb-10 pb-md-12">
         <div className="container">
-          <div className="col-12 col-md-6 mb-1">
+          <div className="col-12 col-md-5">
             <h1>WiCSM</h1>
             <h4>
               Women in Computer Science, Statistics & Mathematics, welcomes and uplifts young women
@@ -31,7 +31,7 @@ const Home = (props) => {
 
       <div className="container pt-5 pb-1 pt-md-7 pb-md-1">
         <div className="row justify-content-start">
-          <div className="col-12 col-md-6 mb-1">
+          <div className="col-12 col-md-12 mb-1">
             <h2 className="title-3 text-dark mb-3">About</h2>
             <p>
               WiCSM aims to attract more talented young women into the field of CSM,
@@ -70,7 +70,7 @@ const Home = (props) => {
             </div>
           ))}
           <div className="col-12 text-center">
-            <Link className="button button-primary mt-2" to="/services">
+            <Link className="button button-primary mt-2" to="/events">
               View All Events
             </Link>
           </div>
@@ -104,7 +104,7 @@ const Home = (props) => {
 export const query = graphql`
   query {
     allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/services/" } }
+      filter: { fileAbsolutePath: { regex: "/event/" } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {

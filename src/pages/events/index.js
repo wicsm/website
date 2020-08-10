@@ -3,11 +3,11 @@ import { graphql, Link } from 'gatsby';
 import SEO from '../../components/SEO';
 import Layout from '../../layouts/index';
 
-const Services = (props) => {
-  const services = props.data.allMarkdownRemark.edges;
+const Events = (props) => {
+  const events = props.data.allMarkdownRemark.edges;
   return (
     <Layout bodyClass="page-services">
-      <SEO title="Services"/>
+      <SEO title="Events"/>
       <div className="intro">
         <div className="container">
           <div className="row">
@@ -20,7 +20,7 @@ const Services = (props) => {
 
       <div className="container pb-6">
         <div className="row">
-          {services.map(edge => (
+          {events.map(edge => (
             <div key={edge.node.frontmatter.path} className="col-12 col-md-4 mb-1">
               <div className="card service service-teaser">
                 <div className="card-content">
@@ -39,9 +39,9 @@ const Services = (props) => {
 };
 
 export const query = graphql`
-  query ServicesQuery {
+  query EventsQuery {
     allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/services/" } }
+      filter: { fileAbsolutePath: { regex: "/events/" } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {
@@ -57,4 +57,4 @@ export const query = graphql`
   }
 `;
 
-export default Services;
+export default Events;

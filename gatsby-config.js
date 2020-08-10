@@ -11,20 +11,21 @@ module.exports = {
     menuLinks: [
       {
         name: 'Events',
-        link: '/services',
+        link: '/events',
       },
       {
         name: 'Team',
         link: '/team',
       },
       {
-        name: 'Testimonials',
-        link: '/testimonials',
+        name: 'Office Hours',
+        link: 'https://utsccms.club/calendar',
       },
       {
         name: 'Contact',
         link: '/contact',
       },
+
     ],
   },
   plugins: [
