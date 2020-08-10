@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-serif-theme",
+  "name": "wicsm-site",
   "version": "1.0.0",
-  "author": "Robert Austin <rob@jugglerdigital.com>",
+  "author": "Samiul Haque <https://github.com/samhaque>",
   "license": "MIT",
   "scripts": {
     "develop": "gatsby develop",

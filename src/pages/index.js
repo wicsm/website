@@ -14,27 +14,48 @@ const Home = (props) => {
       <Helmet>
         <meta
           name="description"
-          content="Small Business Theme. Multiple content types using Markdown and JSON sources. Responsive design and SCSS. This is a beautiful and artfully designed starting theme."
+          content="Women in Computer Science, Statistics & Mathematics, welcomes and uplifts young women in the realm of CSM."
         />
       </Helmet>
       <div className="intro pb-4">
         <div className="container">
-          <h1>Serif - Gatsby Small Business Theme.</h1>
-          <p>
-            Multiple content types using Markdown and JSON sources. Responsive design and SCSS. This
-            is a beautiful and artfully designed starting theme.
-          </p>
+          <div className="col-12 col-md-6 mb-1">
+            <h1>WiCSM</h1>
+            <h4>
+              Women in Computer Science, Statistics & Mathematics, welcomes and uplifts young women
+              in the realm of CSM.
+            </h4>
+          </div>
         </div>
       </div>
 
-      <div className="container pt-2">
-        <Call button/>
+      <div className="container pt-5 pb-1 pt-md-7 pb-md-1">
+        <div className="row justify-content-start">
+          <div className="col-12 col-md-6 mb-1">
+            <h2 className="title-3 text-dark mb-3">About</h2>
+            <p>
+              WiCSM aims to attract more talented young women into the field of CSM,
+              by encouraging them to pursue a degree in a profession that is working to
+              break/minimize gender barriers.
+            </p>
+            <p>
+              We do this by hosting numerous communal, academic, and skillful events to create
+              a safe place for students to come together & connect.
+            </p>
+            <p>
+              By introducing them to mentors and encouraging them to network with members
+              of the CSM community, we guide them through their educational and career goals.
+            </p>
+          </div>
+        </div>
+
+
       </div>
 
-      <div className="container pt-8 pt-md-10">
+      <div className="container pt-5 pb-5 pt-md-7 pb-md-7">
         <div className="row justify-content-start">
           <div className="col-12">
-            <h2 className="title-3 text-dark mb-3">Our Services</h2>
+            <h2 className="title-3 text-dark mb-3">What we do</h2>
           </div>
           {markdown.map(edge => (
             <div key={edge.node.frontmatter.path} className="col-12 col-md-4 mb-1">
@@ -50,7 +71,7 @@ const Home = (props) => {
           ))}
           <div className="col-12 text-center">
             <Link className="button button-primary mt-2" to="/services">
-              View All Services
+              View All Events
             </Link>
           </div>
         </div>

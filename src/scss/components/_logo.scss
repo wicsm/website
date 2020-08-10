@@ -6,8 +6,8 @@
   }
 
   img {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 75px;
   }
 
   a {
@@ -19,7 +19,7 @@
 
 .logo-mobile {
   display: block;
-  width: 30px;
+  width: 50px;
   @include media-breakpoint-up(sm) {
     display: none;
   }
