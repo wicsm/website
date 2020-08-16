@@ -1,4 +1,4 @@
-# Gatsby Serif Theme
+# WiCSM Site
 
 WiCSM site based on the popular [Gatsby Serif Template](https://github.com/JugglerX/gatsby-serif-theme)
 
