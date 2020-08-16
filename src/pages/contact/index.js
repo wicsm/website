@@ -20,9 +20,6 @@ const Contact = props => (
         <div className="col-12">
           <Call button={false}/>
         </div>
-        <div className="col-12">
-          <h4 className="mt-4">Office Hours</h4>
-        </div>
       </div>
     </div>
   </Layout>
