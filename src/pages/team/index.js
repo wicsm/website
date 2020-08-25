@@ -14,8 +14,8 @@ const Team = (props) => {
             <div className="col-12">
               <h1>Meet The Team</h1>
               <p>
-                Our team of qualified accountants and financial consultants can help your business
-                at any stage of it’s growth.
+                  Our exceptional team of volunteer student leaders and champions are listed here.
+                  Contact them individually,<br/><a href="/contact">or shoot us an email</a>.
               </p>
             </div>
           </div>
