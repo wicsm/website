@@ -7,7 +7,6 @@ const Footer = props => (
       <div className="row">
         <div className="col-12">
           <div className="footer">
-            <h3 className="footer-title">{props.data.site.siteMetadata.title}</h3>
             <ul className="footer-menu">
               <li>
                 {' '}

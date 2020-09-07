@@ -1,7 +1,7 @@
 ---
 path: '/events/destressor-events'
 title: 'Destressor events'
-date: 2018-11-28T15:15:34+10:00
+order: 2
 image: '/events/2.svg'
 featured: true
 draft: false

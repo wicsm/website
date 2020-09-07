@@ -6,20 +6,24 @@ module.exports = {
     description: 'my theme',
     contact: {
       phone: 'XXX XXX XXX',
-      email: 'wicsm@gmail.com',
+      email: 'wicsm.utsc.utoronto.ca',
     },
     menuLinks: [
+      {
+        name: 'Home',
+        link: '/',
+      },
       {
         name: 'Events',
         link: '/events',
       },
+      // {
+      //   name: 'Her Story',
+      //   link: '/events',
+      // },
       {
         name: 'Team',
         link: '/team',
-      },
-      {
-        name: 'Office Hours',
-        link: 'https://utsccms.club/calendar',
       },
       {
         name: 'Contact',
@@ -57,7 +61,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
-        trackingId: guid ? guid : 'UA-XXX-1',
+        trackingId: guid || 'UA-XXX-1',
         // Puts tracking script in the head instead of the body
         head: false,
       },

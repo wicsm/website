@@ -1,7 +1,7 @@
 ---
 path: '/events/mentorship'
 title: 'Mentorship Program'
-date: 2018-11-28T15:15:34+10:00
+order: 4
 image: '/events/3.svg'
 featured: true
 draft: false

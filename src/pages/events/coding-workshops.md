@@ -1,7 +1,7 @@
 ---
 path: '/events/coding-workshops'
 title: 'Coding Workshops'
-date: 2018-11-28T15:15:34+10:00
+order: 3
 image: '/events/1.svg'
 featured: true
 draft: false

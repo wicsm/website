@@ -3,9 +3,9 @@ import { Link } from 'gatsby';
 import Menu from './Menu';
 import Hamburger from './Hamburger';
 // eslint-disable-next-line import/no-duplicates
-import logo from '../images/Logo.svg';
+import logo from '../images/single-logo.svg';
 // eslint-disable-next-line import/no-duplicates
-import logoMobile from '../images/Logo.svg';
+import logoMobile from '../images/single-logo.svg';
 import MenuMobile from './MenuMobile';
 
 class Header extends React.Component {

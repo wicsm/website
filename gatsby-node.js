@@ -26,7 +26,7 @@ exports.createPages = ({ graphql, actions }) => {
             }
             team: allMarkdownRemark(
               filter: { fileAbsolutePath: { regex: "/team/" } }
-              sort: { fields: [frontmatter___date], order: DESC }
+              sort: { fields: [frontmatter___order], order: DESC }
             ) {
               edges {
                 node {
@@ -34,7 +34,7 @@ exports.createPages = ({ graphql, actions }) => {
                   frontmatter {
                     path
                     title
-                    date(formatString: "DD MMMM YYYY")
+                    order
                   }
                   excerpt
                 }
@@ -42,7 +42,7 @@ exports.createPages = ({ graphql, actions }) => {
             }
             testimonials: allMarkdownRemark(
               filter: { fileAbsolutePath: { regex: "/testimonials/" } }
-              sort: { fields: [frontmatter___date], order: DESC }
+              sort: { fields: [frontmatter___order], order: DESC }
             ) {
               edges {
                 node {
@@ -50,7 +50,7 @@ exports.createPages = ({ graphql, actions }) => {
                   frontmatter {
                     path
                     title
-                    date(formatString: "DD MMMM YYYY")
+                    order
                   }
                   excerpt
                 }
