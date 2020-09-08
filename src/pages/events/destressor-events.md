@@ -1,6 +1,6 @@
 ---
 path: '/events/destressor-events'
-title: 'Destressor events'
+title: 'Destressor Events'
 order: 2
 image: '/events/2.svg'
 featured: true

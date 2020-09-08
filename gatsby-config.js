@@ -6,12 +6,20 @@ module.exports = {
     description: 'my theme',
     contact: {
       phone: 'XXX XXX XXX',
-      email: 'wicsm.utsc.utoronto.ca',
+      email: 'wicsm.utsc@gmail.com',
     },
     menuLinks: [
       {
         name: 'Home',
         link: '/',
+      },
+      {
+        name: 'About Us',
+        link: '/#about',
+      },
+      {
+        name: 'Team',
+        link: '/team',
       },
       {
         name: 'Events',
@@ -21,10 +29,7 @@ module.exports = {
       //   name: 'Her Story',
       //   link: '/events',
       // },
-      {
-        name: 'Team',
-        link: '/team',
-      },
+
       {
         name: 'Contact',
         link: '/contact',

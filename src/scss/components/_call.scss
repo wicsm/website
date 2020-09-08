@@ -23,10 +23,6 @@
 
   .call-box-top {
     flex: 1 0 auto;
-    padding: 20px;
-    @include media-breakpoint-up(md) {
-      padding: 20px;
-    }
   }
 
   .call-box-bottom {

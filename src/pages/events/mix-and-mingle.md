@@ -1,6 +1,6 @@
 ---
 path: '/events/mix-and-mingle'
-title: 'Mix and mingles'
+title: 'Mix and Mingles'
 order: 5
 image: '/events/4.svg'
 featured: true
