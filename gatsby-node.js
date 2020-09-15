@@ -24,6 +24,23 @@ exports.createPages = ({ graphql, actions }) => {
                 }
               }
             }
+            stories: allMarkdownRemark(
+              filter: { fileAbsolutePath: { regex: "/stories/" } }
+              sort: { fields: [frontmatter___title], order: DESC }
+            ) {
+              edges {
+                node {
+                  id
+                  frontmatter {
+                    title
+                    image
+                    linkedin
+                    path
+                  }
+                  excerpt
+                }
+              }
+            }
             team: allMarkdownRemark(
               filter: { fileAbsolutePath: { regex: "/team/" } }
               sort: { fields: [frontmatter___order], order: DESC }
@@ -61,6 +78,16 @@ exports.createPages = ({ graphql, actions }) => {
       ).then((result) => {
         result.data.events.edges.forEach(({ node }) => {
           const component = path.resolve('src/templates/service.js');
+          createPage({
+            path: node.frontmatter.path,
+            component,
+            context: {
+              id: node.id,
+            },
+          });
+        });
+        result.data.stories.edges.forEach(({ node }) => {
+          const component = path.resolve('src/templates/stories.js');
           createPage({
             path: node.frontmatter.path,
             component,

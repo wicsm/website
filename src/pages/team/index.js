@@ -7,8 +7,16 @@ import SEO from '../../components/SEO';
 import Layout from '../../layouts/index';
 
 const Team = (props) => {
-    const teams = props.data.allMarkdownRemark.edges;
-    console.log(teams);
+    const subTeams = {};
+    props.data.allMarkdownRemark.edges.forEach(function (val) {
+        if (val.node.frontmatter.subteam in subTeams) {
+            subTeams[val.node.frontmatter.subteam].push(val);
+        } else {
+            subTeams[val.node.frontmatter.subteam] = [val];
+        }
+    });
+    const subTeamHeaders = ["Co-Presidents", "Corporations", "Events", "Marketing", "Finance"]
+    console.log(subTeams);
     return (
         <Layout bodyClass="page-teams">
             <SEO title="Team"/>
@@ -33,51 +41,61 @@ const Team = (props) => {
             </div>
 
             <div className="container pb-6">
-                <div className="row">
-                    {teams.map(edge => (
-                        <div key={edge.node.frontmatter.path} className="col-12 col-md-6 mb-1">
-                            <div className="team card-two">
-                                <div className="card-header whitebox col-12">
-                                    <div className="card-header-left">
-                                        {edge.node.frontmatter.image && (
-                                            <div className="card-image">
-                                                <img
-                                                    alt={edge.node.frontmatter.title}
-                                                    className="img-fluid mb-1"
-                                                    src={edge.node.frontmatter.image}
+                {subTeamHeaders.map((headerName) => {
+                    return (
+                        <div>
+                            <h2>{headerName}</h2>
+                            <div className="row">
+                                {subTeams[headerName].map((edge) => {
+                                    return (
+                                        <div key={edge.node.frontmatter.path} className="col-12 col-md-6 mb-1">
+                                            <div className="team card-two">
+                                                <div className="card-header whitebox col-12">
+                                                    <div className="card-header-left">
+                                                        {edge.node.frontmatter.image && (
+                                                            <div className="card-image">
+                                                                <img
+                                                                    alt={edge.node.frontmatter.title}
+                                                                    className="img-fluid mb-1"
+                                                                    src={edge.node.frontmatter.image}
+                                                                />
+                                                            </div>
+                                                        )}
+                                                    </div>
+                                                    <div className="card-right">
+                                                        <h2 className="card-title">{edge.node.frontmatter.title}</h2>
+                                                        <ul className="card-meta">
+                                                            <li>
+                                                                <strong
+                                                                    className="">{edge.node.frontmatter.jobtitle}</strong>
+                                                            </li>
+                                                            <li>
+
+                                                                <a className="pl-0" target="_blank" rel="noreferrer"
+                                                                   href={edge.node.frontmatter.linkedinurl}>
+                                                                    <FontAwesomeIcon icon={faLinkedinIn} size="lg"/>
+                                                                </a>
+
+                                                                <a className="pl-1" href={edge.node.frontmatter.email}>
+                                                                    <FontAwesomeIcon icon={faEnvelope} size="lg"/>
+                                                                </a>
+
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    className="team-content"
+                                                    dangerouslySetInnerHTML={{__html: edge.node.html}}
                                                 />
                                             </div>
-                                        )}
-                                    </div>
-                                    <div className="card-right">
-                                        <h2 className="card-title">{edge.node.frontmatter.title}</h2>
-                                        <ul className="card-meta">
-                                            <li>
-                                                <strong className="">{edge.node.frontmatter.jobtitle}</strong>
-                                            </li>
-                                            <li>
-
-                                                <a className="pl-0" target="_blank" rel="noreferrer"
-                                                   href={edge.node.frontmatter.linkedinurl}>
-                                                    <FontAwesomeIcon icon={faLinkedinIn} size="lg"/>
-                                                </a>
-
-                                                <a className="pl-1" href={edge.node.frontmatter.email}>
-                                                    <FontAwesomeIcon icon={faEnvelope} size="lg"/>
-                                                </a>
-
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div
-                                    className="team-content"
-                                    dangerouslySetInnerHTML={{__html: edge.node.html}}
-                                />
+                                        </div>
+                                    )
+                                })}
                             </div>
                         </div>
-                    ))}
-                </div>
+                    )
+                })}
             </div>
         </Layout>
     );
@@ -100,6 +118,7 @@ export const query = graphql`
             jobtitle
             linkedinurl
             email
+            subteam
           }
         }
       }

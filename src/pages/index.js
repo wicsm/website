@@ -36,6 +36,7 @@ const Home = (props) => {
                 <div className="row justify-content-start">
                     <div className="col-12 col-md-12 mb-1">
                         <h2 className="title-3 text-dark mb-3">About Us</h2>
+                        <div>
                         <p>
                             WiCSM aims to attract more talented young women into the field of CSM,
                             by encouraging them to pursue a degree in a profession that is working to
@@ -49,6 +50,7 @@ const Home = (props) => {
                             By introducing them to mentors and encouraging them to network with members
                             of the CSM community, we guide them through their educational and career goals.
                         </p>
+                        </div>
                     </div>
                 </div>
 

@@ -22,6 +22,10 @@ module.exports = {
         link: '/team',
       },
       {
+        name: 'Her Story',
+        link: '/stories',
+      },
+      {
         name: 'Events',
         link: '/events',
       },

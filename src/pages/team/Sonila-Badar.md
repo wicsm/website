@@ -6,4 +6,5 @@ order: 1
 jobtitle: 'Co-President'
 email: 'sonila.badar@mail.utoronto.ca'
 linkedinurl: 'https://www.linkedin.com/in/sonila-badar/'
+subteam: 'Co-Presidents'
 ---
