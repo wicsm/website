@@ -3,11 +3,13 @@ const guid = process.env.NETLIFY_GOOGLE_ANALYTICS_ID;
 module.exports = {
   siteMetadata: {
     title: 'WiCSM',
-    description: 'my theme',
+    description: 'Women in Computer Science, Statistics & Mathematics, welcomes and uplifts young women in the realm of CSM.',
     contact: {
       phone: 'XXX XXX XXX',
       email: 'wicsm.utsc@gmail.com',
     },
+    url: "https://wicsm-utsc.netlify.app",
+    image: "/images/share.png",
     menuLinks: [
       {
         name: 'Home',
@@ -29,11 +31,6 @@ module.exports = {
         name: 'Events',
         link: '/events',
       },
-      // {
-      //   name: 'Her Story',
-      //   link: '/events',
-      // },
-
       {
         name: 'Contact',
         link: '/contact',

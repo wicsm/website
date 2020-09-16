@@ -14,6 +14,7 @@ const Home = (props) => {
                 <meta
                     name="description"
                     content="Women in Computer Science, Statistics & Mathematics, welcomes and uplifts young women in the realm of CSM."
+
                 />
             </Helmet>
             <div className="intro pb-10 pb-md-12 mt-12">
