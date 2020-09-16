@@ -1,7 +1,7 @@
 ---
-path: '/stories/angela-z-bernuy'
-title: 'Angela Z Bernuy'
-image: '/stories/angela.jpg'
+path: '/stories/angela-zavaleta-bernuy'
+title: 'Angela Zavaleta-Bernuy'
+image: '/stories/angela-zavaleta-bernuy.jpg'
 order: 1
 linkedin: https://www.linkedin.com/in/angela-zavaleta-bernuy/
 ---
