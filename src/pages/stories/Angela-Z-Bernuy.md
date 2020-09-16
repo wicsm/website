@@ -1,12 +1,12 @@
 ---
 path: '/stories/angela-z-bernuy'
 title: 'Angela Z Bernuy'
-image: '/events/3.svg'
+image: '/stories/angela.jpg'
 order: 1
 linkedin: https://www.linkedin.com/in/angela-zavaleta-bernuy/
 ---
 http://www.cs.toronto.edu/~angelazb/ <br/>
-Graduate Computer Science Student at the University of Toronto
+<b>Graduate Computer Science Student at the University of Toronto</b><br/>
 
 When I got into university, I didn’t really know what I wanted to do.
 I loved math, so I thought, why not? I chose UTSC because it had co-op and I was aware that experience was necessary. 

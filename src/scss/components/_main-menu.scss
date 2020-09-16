@@ -35,7 +35,7 @@
         text-decoration: none;
 
         &:hover {
-          background: $primary;
+          background: #9e98e2;
           color: #fff;
           text-decoration: none;
         }
@@ -44,13 +44,13 @@
 
     > li.active {
       > a {
-        background: $primary;
+        background: #9e98e2;
         text-decoration: none;
         color: #fff;
 
         &:hover {
           text-decoration: none;
-          background: $primary;
+          background: #9e98e2;
           transition: all 225ms ease-in 0s;
           color: #fff;
         }

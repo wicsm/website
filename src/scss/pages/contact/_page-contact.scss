@@ -1,8 +1,8 @@
-.page-teams {
-  background-image: url('../images/teams-background.svg');
+.page-contact {
+  background-image: url('../images/contact-background.svg');
   background-repeat: no-repeat;
-  background-size: 115%;
-  background-position: 49px -40px;
+  background-size: 80%;
+  background-position: 90px 60px;
   @include media-breakpoint-up(sm) {
     background-size: 90%;
     background-position: 159px -40px;
@@ -12,7 +12,7 @@
     background-position: 199px -80px;
   }
   @include media-breakpoint-up(lg) {
-    background-size: 60%;
-    background-position: 100% 10px;
+    background-size: 50%;
+    background-position: 90% 80px;
   }
 }

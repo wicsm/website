@@ -22,7 +22,7 @@ const Events = (props) => {
         <div className="row">
           {events.map(edge => (
             <div key={edge.node.frontmatter.path} className="col-12 col-md-4 mb-1">
-              <div className="card service service-teaser">
+              <div className="card service service-teaser whitebox">
                 <div className="card-content">
                   <h2>
                     <Link to={edge.node.frontmatter.path}>{edge.node.frontmatter.title}</Link>

@@ -1,6 +1,5 @@
 ---
 path: '/team/srabanti-chakraborty'
-order: 6
 title: 'Srabanti Chakraborty'
 image: '/team/srabanti-chakraborty.jpg'
 jobtitle: 'Corporation Associate'

@@ -1,0 +1,18 @@
+.page-services {
+  background-image: url('../images/events-background.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 10px 60px;
+  @include media-breakpoint-up(sm) {
+    background-size: 90%;
+    background-position: 159px 60px;
+  }
+  @include media-breakpoint-up(md) {
+    background-size: 85%;
+    background-position: 199px 20px;
+  }
+  @include media-breakpoint-up(lg) {
+    background-size: 42%;
+    background-position: 100% 40px;
+  }
+}

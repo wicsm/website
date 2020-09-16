@@ -15,8 +15,7 @@ const Team = (props) => {
             subTeams[val.node.frontmatter.subteam] = [val];
         }
     });
-    const subTeamHeaders = ["Co-Presidents", "Corporations", "Events", "Marketing", "Finance"]
-    console.log(subTeams);
+    const subTeamHeaders = ["Co-Presidents", "Corporations", "Events", "Marketing", "Finance", "Mentors"]
     return (
         <Layout bodyClass="page-teams">
             <SEO title="Team"/>
@@ -43,7 +42,7 @@ const Team = (props) => {
             <div className="container pb-6">
                 {subTeamHeaders.map((headerName) => {
                     return (
-                        <div>
+                        <div className="mb-2">
                             <h2>{headerName}</h2>
                             <div className="row">
                                 {subTeams[headerName].map((edge) => {
@@ -105,7 +104,7 @@ export const query = graphql`
   query TeamQuery {
     allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/team/" } }
-      sort: { fields: [frontmatter___order], order: ASC }
+      sort: { fields: [frontmatter___title], order: ASC }
     ) {
       edges {
         node {
@@ -114,7 +113,6 @@ export const query = graphql`
             title
             path
             image
-            order
             jobtitle
             linkedinurl
             email

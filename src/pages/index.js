@@ -16,7 +16,7 @@ const Home = (props) => {
                     content="Women in Computer Science, Statistics & Mathematics, welcomes and uplifts young women in the realm of CSM."
                 />
             </Helmet>
-            <div className="intro pb-10 pb-md-12 mt-2">
+            <div className="intro pb-10 pb-md-12 mt-12">
                 <div className="container">
                     <div className="col-12 col-md-5">
                         {/*<h1>WiCSM</h1>*/}
@@ -32,7 +32,7 @@ const Home = (props) => {
                 </div>
             </div>
 
-            <div className="container pt-5 pb-1 pt-md-7 pb-md-1" id="about">
+            <div className="container pb-1 pt-md-7 pb-md-1" id="about">
                 <div className="row justify-content-start">
                     <div className="col-12 col-md-12 mb-1">
                         <h2 className="title-3 text-dark mb-3">About Us</h2>
@@ -53,9 +53,18 @@ const Home = (props) => {
                         </div>
                     </div>
                 </div>
-
-
             </div>
+
+            {/*<div className="container pb-1 pt-md-7 pb-md-1" id="about">*/}
+            {/*    <div className="row justify-content-start">*/}
+            {/*        <div className="col-12 col-md-12 mb-1">*/}
+            {/*            <h2 className="title-3 text-dark mb-3">Sign up for our Newsletter</h2>*/}
+            {/*            <div>*/}
+
+            {/*            </div>*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*</div>*/}
 
             <div className="container pt-5 pb-5 pt-md-7 pb-md-7">
                 <div className="row justify-content-start">
@@ -86,19 +95,6 @@ const Home = (props) => {
                     </div>
                 </div>
             </div>
-            {/*<div className="container pt-5 pb-5 pt-md-7 pb-md-7">*/}
-            {/*    <div className="row justify-content-start">*/}
-            {/*        <div className="col-12">*/}
-            {/*            <h2 className="title-3 text-dark mb-3">Sign up for our Newsletter</h2>*/}
-            {/*        </div>*/}
-            {/*       */}
-            {/*        <div className="col-12 text-center">*/}
-            {/*            <Link className="button button-primary mt-2" to="/events">*/}
-            {/*                View All Events*/}
-            {/*            </Link>*/}
-            {/*        </div>*/}
-            {/*    </div>*/}
-            {/*</div>*/}
         </Layout>
     );
 };

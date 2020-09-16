@@ -66,10 +66,12 @@
 // Pages
 @import 'pages/home';
 @import 'pages/team/page-teams';
+@import 'pages/stories/page-stories';
+@import 'pages/contact/page-contact';
 @import 'pages/testimonials/page-testimonials';
 @import 'pages/testimonials/testimonial';
-@import 'pages/services/page-services';
-@import 'pages/services/page-service';
+@import 'pages/events/page-events';
+@import 'pages/events/page-event';
 
 // Display breakpoints for DEV
 // body:after {
