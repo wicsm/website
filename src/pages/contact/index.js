@@ -17,7 +17,7 @@ const Contact = props => (
     </div>
     <div className="container">
       <div className="row">
-        <div className="col-8 whitebox">
+        <div className="col-8">
             <strong><Call button={false}/></strong>
         </div>
       </div>
