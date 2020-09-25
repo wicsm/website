@@ -55,29 +55,6 @@ const Home = (props) => {
                     </div>
                 </div>
             </div>
-            <div className="container pb-1 pt-md-7 pb-md-1" id="about">
-                <div className="row justify-content-start">
-                    <div className="col-12 col-md-12 mb-1">
-                        <h2 className="title-3 text-dark mb-3">Sign up for our newsletter below</h2>
-                        <div className="input-group input-group-lg">
-                            <form
-                                action="https://amacss.us16.list-manage.com/subscribe/post?u=641679e76875b8186d30d1f0b&amp;id=362221620e"
-                                method="post" id="mc-embedded-subscribe-form"
-                                name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
-                                <label>
-                                    <div>
-                                        Email:
-                                        <input type="email" name="EMAIL"/>
-                                    </div>
-
-                                </label>
-                                <br/>
-                                <btn className="button button-primary mt-2">Submit</btn>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
             {/*<div className="container pb-1 pt-md-7 pb-md-1" id="about">*/}
             {/*    <div className="row justify-content-start">*/}
