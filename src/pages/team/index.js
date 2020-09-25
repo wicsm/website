@@ -16,6 +16,7 @@ const Team = (props) => {
         }
     });
     const subTeamHeaders = ["Co-Presidents", "Corporations", "Events", "Marketing", "Finance", "Mentors"]
+
     return (
         <Layout bodyClass="page-teams">
             <SEO title="Team"/>
@@ -104,7 +105,7 @@ export const query = graphql`
   query TeamQuery {
     allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/team/" } }
-      sort: { fields: [frontmatter___title], order: ASC }
+      sort: { fields: [frontmatter___jobtitle], order: DESC }
     ) {
       edges {
         node {

@@ -7,4 +7,4 @@ featured: true
 draft: false
 ---
 
-Offer events for networking within the CSM community as well as Karoke nights.
+Offer events for networking within the CSM community as well as Karaoke nights.

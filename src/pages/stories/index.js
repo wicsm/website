@@ -11,8 +11,16 @@ const Stories = (props) => {
             <div className="intro">
                 <div className="container">
                     <div className="row">
-                        <div className="col-12">
+                        <div className="col-lg-6 col-md-6 col-sm-12">
                             <h1>Her Story</h1>
+                            <div>
+                                We’re excited to introduce WiCSM’s new blog post: <b>Her Story</b><br/><br/>
+                                Our blog posts feature female UTSC alumni who will be sharing their stories and
+                                experiences of what it’s like to pursue programs in the CMS field!
+                                You will get an opportunity to listen to our alumni talk about their accomplishments
+                                and challenges, as well some advice on how to be successful in the field!
+                                We’ll be posting every 1-2 weeks on our website. Stay tuned!
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -35,7 +43,8 @@ const Stories = (props) => {
                                             </div>
                                         )}
                                     </div>
-                                    <h2><Link to={edge.node.frontmatter.linkedin}>{edge.node.frontmatter.title}</Link></h2>
+                                    <h2><Link to={edge.node.frontmatter.linkedin}>{edge.node.frontmatter.title}</Link>
+                                    </h2>
                                     <div
                                         className="team-content"
                                         dangerouslySetInnerHTML={{__html: edge.node.html}}
