@@ -38,19 +38,42 @@ const Home = (props) => {
                     <div className="col-12 col-md-12 mb-1">
                         <h2 className="title-3 text-dark mb-3">About Us</h2>
                         <div>
-                        <p>
-                            WiCSM aims to attract more talented young women into the field of CSM,
-                            by encouraging them to pursue a degree in a profession that is working to
-                            break/minimize gender barriers.
-                        </p>
-                        <p>
-                            We do this by hosting numerous communal, academic, and skillful events to create
-                            a safe place for students to come together & connect.
-                        </p>
-                        <p>
-                            By introducing them to mentors and encouraging them to network with members
-                            of the CSM community, we guide them through their educational and career goals.
-                        </p>
+                            <p>
+                                WiCSM aims to attract more talented young women into the field of CSM,
+                                by encouraging them to pursue a degree in a profession that is working to
+                                break/minimize gender barriers.
+                            </p>
+                            <p>
+                                We do this by hosting numerous communal, academic, and skillful events to create
+                                a safe place for students to come together & connect.
+                            </p>
+                            <p>
+                                By introducing them to mentors and encouraging them to network with members
+                                of the CSM community, we guide them through their educational and career goals.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="container pb-1 pt-md-7 pb-md-1" id="about">
+                <div className="row justify-content-start">
+                    <div className="col-12 col-md-12 mb-1">
+                        <h2 className="title-3 text-dark mb-3">Sign up for our newsletter below</h2>
+                        <div className="input-group input-group-lg">
+                            <form
+                                action="https://amacss.us16.list-manage.com/subscribe/post?u=641679e76875b8186d30d1f0b&amp;id=362221620e"
+                                method="post" id="mc-embedded-subscribe-form"
+                                name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
+                                <label>
+                                    <div>
+                                        Email:
+                                        <input type="email" name="EMAIL"/>
+                                    </div>
+
+                                </label>
+                                <br/>
+                                <btn className="button button-primary mt-2">Submit</btn>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -101,25 +124,25 @@ const Home = (props) => {
 };
 
 export const query = graphql`
-  query {
+query {
     allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/event/" } }
-      sort: { fields: [frontmatter___order], order: ASC }
+        filter: {fileAbsolutePath: {regex: "/event/"}}
+    sort: {fields: [frontmatter___order], order: ASC}
     ) {
-      edges {
-        node {
-          id
-          frontmatter {
-            path
-            title
-            image
-            order
-          }
-          excerpt
-        }
-      }
-    }
-  }
+    edges {
+    node {
+    id
+    frontmatter {
+    path
+    title
+    image
+    order
+}
+    excerpt
+}
+}
+}
+}
 `;
 
 export default Home;
