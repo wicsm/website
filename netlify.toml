@@ -1,0 +1,5 @@
+[[redirects]]
+    from = "https://wicsm-utsc.netlify.app"
+    to = "https://wicsm.ca"
+    status = 301
+    force = true
