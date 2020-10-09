@@ -63,7 +63,7 @@ export const query = graphql`
   query StoriesQuery {
     allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/stories/" } }
-      sort: { fields: [frontmatter___title], order: ASC }
+      sort: { fields: [frontmatter___title], order: DESC }
     ) {
       edges {
         node {

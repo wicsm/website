@@ -56,16 +56,16 @@ const Home = (props) => {
                 </div>
             </div>
 
-            {/*<div className="container pb-1 pt-md-7 pb-md-1" id="about">*/}
-            {/*    <div className="row justify-content-start">*/}
-            {/*        <div className="col-12 col-md-12 mb-1">*/}
-            {/*            <h2 className="title-3 text-dark mb-3">Sign up for our Newsletter</h2>*/}
-            {/*            <div>*/}
+            <div className="container pb-1 pt-md-7 pb-md-1">
+                <div className="row justify-content-start">
+                    <div className="col-12 col-md-12 mb-1">
+                        <h2 className="title-3 text-dark mb-3">Sign up for our Newsletter</h2>
+                        <div>
 
-            {/*            </div>*/}
-            {/*        </div>*/}
-            {/*    </div>*/}
-            {/*</div>*/}
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <div className="container pt-5 pb-5 pt-md-7 pb-md-7">
                 <div className="row justify-content-start">
