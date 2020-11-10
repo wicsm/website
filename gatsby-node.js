@@ -35,6 +35,7 @@ exports.createPages = ({ graphql, actions }) => {
                     title
                     image
                     linkedin
+                    jobtitle
                     path
                   }
                   excerpt

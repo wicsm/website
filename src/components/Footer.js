@@ -73,7 +73,7 @@ const Footer = props => (
                                 />
 
                                 <AnimatedSocialIcon
-                                    brandName="twitterAlt"
+                                    brandName="tiktok"
                                     url="https://www.tiktok.com/@wicsmutsc"
                                     animation="bounce"
                                     defaultColor="#D1D1D1"
