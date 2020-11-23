@@ -8,8 +8,8 @@ module.exports = {
       phone: 'XXX XXX XXX',
       email: 'wicsm.utsc@gmail.com',
     },
-    url: "https://wicsm-utsc.netlify.app",
-    image: "/images/share.png",
+    url: 'https://wicsm-utsc.netlify.app',
+    image: '/images/share.png',
     menuLinks: [
       {
         name: 'Home',

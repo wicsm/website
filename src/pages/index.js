@@ -90,7 +90,7 @@ const Home = (props) => {
                         </div>
                     ))}
                     <div className="col-12 text-center">
-                        <Link className="button button-primary mt-2" to="/events">
+                        <Link className="button button-primary mt-20" to="/events">
                             View All Events
                         </Link>
                     </div>
