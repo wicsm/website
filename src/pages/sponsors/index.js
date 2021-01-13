@@ -9,7 +9,7 @@ const Sponsors = (props) => {
     return (
         <Layout bodyClass="page-sponsors">
             <SEO title="Sponsors"/>
-            <div className="intro">t
+            <div className="intro">
                 <div className="container">
                     <div className="row">
                         <div className="col-12">
