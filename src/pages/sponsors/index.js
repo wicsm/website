@@ -32,12 +32,13 @@ const Sponsors = (props) => {
                     <div className="row">
                         {sponsors.map(edge => (
                             <>
-                                <div className="col-12 col-md-6 mb-1">
+                                <div className="col-lg-6 col-md-12 col-sm-12 mb-1">
                                     <Link to={edge.node.frontmatter.link} target="_blank">
                                         <img
                                             alt={edge.node.frontmatter.title}
                                             className="img-fluid mb-1"
                                             src={edge.node.frontmatter.image}
+                                            style={{width: 100 + '%'}}
                                         />
                                     </Link>
                                 </div>
