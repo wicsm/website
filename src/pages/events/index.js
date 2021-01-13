@@ -42,7 +42,7 @@ export const query = graphql`
   query EventsQuery {
     allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/events/" } }
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { fields: [frontmatter___order], order: DESC }
     ) {
       edges {
         node {

@@ -1,0 +1,18 @@
+.page-sponsors {
+  background-image: url('../images/sponsors-background.svg');
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: 80px 80px;
+  @include media-breakpoint-up(sm) {
+    background-size: 70%;
+    background-position: 250px 90px;
+  }
+  @include media-breakpoint-up(md) {
+    background-size: 50%;
+    background-position: 500px 80px;
+  }
+  @include media-breakpoint-up(lg) {
+    background-size: 40%;
+    background-position: 100% 70px;
+  }
+}
