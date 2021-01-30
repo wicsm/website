@@ -3,7 +3,7 @@ path: '/stories/gowthami-palle'
 title: 'Gowthami Palle'
 image: '/stories/gowthami-palle.jpg'
 order: 2
-jobtitle: 'HBSc Computer science Specialist'
+jobtitle: 'HBSc Computer Science Specialist'
 linkedin: https://www.linkedin.com/in/gowthami-palle
 ---
 https://www.linkedin.com/in/gowthami-palle <br/>
